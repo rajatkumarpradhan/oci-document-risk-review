@@ -1,0 +1,8 @@
+{
+  "approved_vendors": ["Northstar Cloud Services", "Bluebird Logistics"],
+  "invoices": [
+    {"source": "synthetic-001", "fields": {"invoice_number": "INV-1001", "vendor": "Northstar Cloud Services", "amount": "840.00", "currency": "USD", "due_date": "2026-10-15"}},
+    {"source": "synthetic-002", "fields": {"invoice_number": "INV-1001", "vendor": "Northstar Cloud Services", "amount": "840.00", "currency": "USD", "due_date": "2026-10-15"}},
+    {"source": "synthetic-003", "fields": {"invoice_number": "INV-1003", "vendor": "Unknown Supplier", "amount": "15500.00", "currency": "USD", "due_date": "2026-11-01"}}
+  ]
+}

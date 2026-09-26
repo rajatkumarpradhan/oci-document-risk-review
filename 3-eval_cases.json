@@ -1,0 +1,6 @@
+[
+ {"id":"clean", "fields":{"invoice_number":"A1","vendor":"Bluebird Logistics","amount":"100","currency":"USD","due_date":"2026-10-15"},"expected":"PASS"},
+ {"id":"low-confidence", "fields":{"invoice_number":{"value":"A2","confidence":0.55},"vendor":"Bluebird Logistics","amount":"100","currency":"USD","due_date":"2026-10-15"},"expected":"REVIEW"},
+ {"id":"unknown-vendor", "fields":{"invoice_number":"A3","vendor":"Unknown","amount":"100","currency":"USD","due_date":"2026-10-15"},"expected":"REVIEW"},
+ {"id":"bad-date", "fields":{"invoice_number":"A4","vendor":"Bluebird Logistics","amount":"100","currency":"USD","due_date":"2026-99-99"},"expected":"REVIEW"}
+]

@@ -1,0 +1,2 @@
+# Install only to enable --mode oci; offline mode uses the Python standard library.
+oci>=2.140,<3
