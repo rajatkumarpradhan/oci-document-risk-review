@@ -1,4 +1,4 @@
-# OCI Document Risk Review
+<img src="assets/banner.svg" alt="oci-document-risk-review" width="100%">
 
 > **Independent portfolio simulation** · Runnable offline · OCI Document Understanding integration requires your own tenancy and is **not live-tested**. It never approves or pays invoices.
 
@@ -13,10 +13,7 @@ A synthetic invoice intake pipeline for finance operations. It reads an offline 
 
 ## Architecture
 
-```text
-Synthetic JSON fixture OR PDF/image -> OCI Document Understanding text extraction
-    -> key-value/table extraction with confidence -> policy + corrections -> SQLite audit/JSON review queue
-```
+<img src="assets/diagram.svg" alt="Architecture and workflow diagram" width="100%">
 
 No production invoices or credentials are included. Offline data and company names are invented. This is a reference workflow, not a full fraud model: duplicate detection persists in SQLite when --ledger is provided, regex extraction expects labeled fields, and a human makes the final decision. For production, persist idempotency keys in a database, validate currencies/dates, manage PII, encrypt documents, add approval audit logs and review thresholds with finance owners.
 
