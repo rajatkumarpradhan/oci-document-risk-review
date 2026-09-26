@@ -1,5 +1,12 @@
 # OCI Document Risk Review
 
+> **Independent portfolio simulation** · Runnable offline · OCI Document Understanding integration requires your own tenancy and is **not live-tested**. It never approves or pays invoices.
+
+**Start here:** `python3 app.py --mode offline` · `python3 -m unittest -v` · `python3 evaluate.py`
+
+**Explore:** [Architecture](#architecture) · [Offline run](#run-offline) · [OCI setup](#switch-to-oci) · [Review workflow](#review-workflow-and-policy) · [Test boundary](#test-boundary)
+
+
 A synthetic invoice intake pipeline for finance operations. It reads an offline fixture without any cloud account, or extracts text from a real document using **OCI AI Document Understanding**. A transparent rules engine flags duplicate invoice numbers, unknown vendors, missing fields and high amounts. It does **not** approve or pay invoices.
 
 > Portfolio simulation, not an Oracle internal project. The offline demo was tested; the OCI branch requires a configured tenancy, service access and a real document and has not been exercised against a live tenancy.
